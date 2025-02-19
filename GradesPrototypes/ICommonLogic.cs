@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GradesPrototypes
 {
-    interface CommonLogic
+    interface ICommonLogic
     {
         void Add();
         void Remove();

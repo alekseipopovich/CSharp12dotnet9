@@ -8,5 +8,10 @@ namespace ClassEnrolment.Logic
 {
     interface CommonLogic
     {
+        void Add();
+        void Modify();
+        void Delete();
+        void Search();
+        
     }
 }

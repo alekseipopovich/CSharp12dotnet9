@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{E543E83C-602B-41DE-9F4B-4CE33CA77B89}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradesPrototypes", "GradesPrototypes\GradesPrototypes.csproj", "{440C246C-5198-45D4-97B4-E9C08148411B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LessonClassHierarhy", "LessonClassHierarhy\LessonClassHierarhy.csproj", "{25EA8F26-40D8-4FB5-B478-8A2D504F9E52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "LambdaDelegates\Delegates.csproj", "{0220A8A7-45E5-4403-829F-75D9CE33459B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateAccount", "DelegateAccount\DelegateAccount.csproj", "{B0FA48F0-BBB0-4B89-B062-584CDD79A30D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockExchange", "StockExchange\StockExchange.csproj", "{A3326CF8-1990-4F84-825A-1B285A61B103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp111", "ConsoleApp111\ConsoleApp111.csproj", "{65530464-318F-4D2C-929A-8F533C56064E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{25EA8F26-40D8-4FB5-B478-8A2D504F9E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25EA8F26-40D8-4FB5-B478-8A2D504F9E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25EA8F26-40D8-4FB5-B478-8A2D504F9E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0220A8A7-45E5-4403-829F-75D9CE33459B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0220A8A7-45E5-4403-829F-75D9CE33459B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0220A8A7-45E5-4403-829F-75D9CE33459B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0220A8A7-45E5-4403-829F-75D9CE33459B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FA48F0-BBB0-4B89-B062-584CDD79A30D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FA48F0-BBB0-4B89-B062-584CDD79A30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FA48F0-BBB0-4B89-B062-584CDD79A30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FA48F0-BBB0-4B89-B062-584CDD79A30D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3326CF8-1990-4F84-825A-1B285A61B103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3326CF8-1990-4F84-825A-1B285A61B103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3326CF8-1990-4F84-825A-1B285A61B103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3326CF8-1990-4F84-825A-1B285A61B103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65530464-318F-4D2C-929A-8F533C56064E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65530464-318F-4D2C-929A-8F533C56064E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65530464-318F-4D2C-929A-8F533C56064E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65530464-318F-4D2C-929A-8F533C56064E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

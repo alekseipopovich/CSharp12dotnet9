@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LessonClassHierarhy
 {
-    public class Rectangle<T> : Shape<T>, IMovable where T : INumber<T>
+    public class Rectangle<T> : Shape<T>, IMovable where T : struct, INumber<T>
     {
         public override string ShapeName => "Прямоугольник";
         private T Width { get; set; }

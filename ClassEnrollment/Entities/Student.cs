@@ -7,11 +7,14 @@
 
         public Student() { }
 
-        public Student(string name) : this(Student.counter, name, 20, new()) { }
-        public Student(int id, string name, int age, Course course)
+        public Student(string name) : this(Student.counter, name, "testgroup", 20, new()) { }
+
+        public Student(string fname, string lname, string group) : this(Student.counter, fname, group, 20, new()) { }
+
+        public Student(int id, string name, string group, int age, Course course) : base(name,name,age,"")
         {
             Id = id;
-            Name = name;
+            GroupStudents = group;
             Age = age;
             Course = course;
             Student.counter++;
@@ -20,7 +23,7 @@
 
         public int Id { get; set; }
         
-        public string Name { get; set; }
+        public string GroupStudents { get; set; }
 
         public int Age { get; set; }
         public Course Course { get; set; }

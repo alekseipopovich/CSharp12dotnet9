@@ -33,7 +33,7 @@ namespace ClassEnrolment.Logic
             var course = courses.Find(c => c.CourseId == courseId);
             if (course != null)
             {
-                if (course.AddStudent(new Student { Id = studentId, Name = studentName, Age = studentAge }))
+                if (course.AddStudent(new Student { Id = studentId, FirstName=studentName, LastName = studentName, Age = studentAge }))
                 {
                     Console.WriteLine("Студент успешно записан на курс.");
                 }
@@ -58,7 +58,7 @@ namespace ClassEnrolment.Logic
             {
                 foreach (var student in course.EnrolledStudents)
                 {
-                    Console.WriteLine($"ID: {student.Id}, Имя: {student.Name}, Возраст: {student.Age}");
+                    Console.WriteLine($"ID: {student.Id}, Имя: {student.GroupStudents}, Возраст: {student.Age}");
                 }
             }
             else
@@ -144,7 +144,7 @@ namespace ClassEnrolment.Logic
                 Console.WriteLine($"Курс: {course.CourseName} (ID: {course.CourseId})");
                 foreach (var student in course.EnrolledStudents)
                 {
-                    Console.WriteLine($"  ID: {student.Id}, Имя: {student.Name}, Возраст: {student.Age}");
+                    Console.WriteLine($"  ID: {student.Id}, Имя: {student.GroupStudents}, Возраст: {student.Age}");
                 }
             }
         }

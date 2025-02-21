@@ -36,6 +36,8 @@ var selectedPeople = from p in people // передаем каждый элем�
                      orderby p  // упорядочиваем по возрастанию
                      select p; // выбираем объект в создаваемую коллекцию
 
+var selectedPeople1 = people.Where(p => p.ToUpper().StartsWith("T")).OrderBy(p => p);
+
 foreach (string person in selectedPeople)
     Console.WriteLine(person);
 

@@ -1,10 +1,21 @@
 ﻿class Program2
 {
+    // Делегат для логирования
+    public delegate void LogDelegate(string message);
+
+    // Метод для логирования в консоль
+    public static void LogMessage(string message)
+    {
+        Console.WriteLine($"[Лог] {DateTime.Now}: {message}");
+    }
+
+    private static LogDelegate logger = LogMessage; // Экземпляр делегата
     // Коллекция для хранения студентов
     private static List<Student> students = new List<Student>();
 
     static void Main(string[] args)
     {
+
         while (true)
         {
             Console.WriteLine("1. Добавить студента");
@@ -32,6 +43,7 @@
                 case 5:
                     return;
                 default:
+                    logger("Неверный вызов");
                     Console.WriteLine("Неверный выбор. Попробуйте снова.");
                     break;
             }
@@ -45,6 +57,7 @@
         string name = Console.ReadLine();
         students.Add(new Student(name));
         Console.WriteLine("Студент добавлен.");
+        logger($"Добавлен студент: {name}");
     }
 
     // Метод для удаления студента

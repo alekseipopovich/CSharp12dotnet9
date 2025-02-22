@@ -25,8 +25,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeTest", "SerializeT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDataModel", "EntityDataModel\EntityDataModel.csproj", "{971701C6-D8FD-47D8-A6CA-1EB01322C5DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppNetFW", "ConsoleAppNetFW\ConsoleAppNetFW.csproj", "{3568175B-4AE8-4026-8617-FA96CFDC479B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,10 +75,6 @@ Global
 		{971701C6-D8FD-47D8-A6CA-1EB01322C5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{971701C6-D8FD-47D8-A6CA-1EB01322C5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{971701C6-D8FD-47D8-A6CA-1EB01322C5DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3568175B-4AE8-4026-8617-FA96CFDC479B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3568175B-4AE8-4026-8617-FA96CFDC479B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3568175B-4AE8-4026-8617-FA96CFDC479B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3568175B-4AE8-4026-8617-FA96CFDC479B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

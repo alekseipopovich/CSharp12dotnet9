@@ -1,0 +1,28 @@
+@page "{id:int}"
+@model webapp01.Pages.Students.DeleteModel
+@{
+    ViewData["Title"] = "Удалить студента";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="alert alert-danger">
+    <h3>Вы уверены, что хотите удалить этого студента?</h3>
+</div>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Фамилия</dt>
+        <dd class="col-sm-10">@Model.Student.LastName</dd>
+        <dt class="col-sm-2">Имя</dt>
+        <dd class="col-sm-10">@Model.Student.FirstName</dd>
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.Student.Email</dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="Student.Id" />
+        <input type="submit" value="Удалить" class="btn btn-danger" />
+        <a asp-page="./Index" class="btn btn-secondary">Назад к списку</a>
+    </form>
+</div> 

@@ -1,0 +1,46 @@
+@page
+@model webapp01.Pages.Grades.CreateModel
+@{
+    ViewData["Title"] = "Назначить курс студенту";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            
+            <div class="form-group mb-3">
+                <label class="control-label">Студент</label>
+                <select asp-for="StudentCourse.StudentId" class="form-select" 
+                        asp-items="@Model.StudentList" required>
+                    <option value="">-- Выберите студента --</option>
+                </select>
+                <span asp-validation-for="StudentCourse.StudentId" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label class="control-label">Курс</label>
+                <select asp-for="StudentCourse.CourseId" class="form-select" 
+                        asp-items="@Model.CourseList" required>
+                    <option value="">-- Выберите курс --</option>
+                </select>
+                <span asp-validation-for="StudentCourse.CourseId" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="StudentCourse.Grade" class="control-label">Оценка</label>
+                <input asp-for="StudentCourse.Grade" class="form-control" type="number" min="0" max="100" />
+                <span asp-validation-for="StudentCourse.Grade" class="text-danger"></span>
+                <small class="form-text text-muted">Оставьте пустым, если хотите назначить курс без оценки</small>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Создать" class="btn btn-primary" />
+                <a asp-page="Index" class="btn btn-secondary">Назад к списку</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

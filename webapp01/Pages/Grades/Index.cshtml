@@ -1,0 +1,36 @@
+@page
+@model webapp01.Pages.Grades.IndexModel
+@{
+    ViewData["Title"] = "Оценки студентов";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Назначить курс студенту</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Студент</th>
+            <th>Курс</th>
+            <th>Оценка</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var grade in Model.Grades)
+        {
+            <tr>
+                <td>@grade.Student.LastName @grade.Student.FirstName</td>
+                <td>@grade.Course.Name</td>
+                <td>@grade.Grade</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-studentId="@grade.StudentId" asp-route-courseId="@grade.CourseId" 
+                       class="btn btn-primary btn-sm">Изменить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> 

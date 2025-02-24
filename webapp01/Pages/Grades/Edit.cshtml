@@ -1,0 +1,34 @@
+@page "{studentId:int}/{courseId:int}"
+@model webapp01.Pages.Grades.EditModel
+@{
+    ViewData["Title"] = "Изменить оценку";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <input type="hidden" asp-for="StudentCourse.StudentId" />
+            <input type="hidden" asp-for="StudentCourse.CourseId" />
+            
+            <div class="form-group mb-3">
+                <label class="control-label">Студент</label>
+                <input class="form-control" value="@Model.StudentName" readonly />
+            </div>
+            <div class="form-group mb-3">
+                <label class="control-label">Курс</label>
+                <input class="form-control" value="@Model.CourseName" readonly />
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="StudentCourse.Grade" class="control-label">Оценка</label>
+                <input asp-for="StudentCourse.Grade" class="form-control" type="number" min="0" max="100" />
+                <span asp-validation-for="StudentCourse.Grade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+                <a asp-page="Index" class="btn btn-secondary">Назад к списку</a>
+            </div>
+        </form>
+    </div>
+</div> 

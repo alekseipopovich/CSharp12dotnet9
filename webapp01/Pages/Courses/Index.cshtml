@@ -1,0 +1,35 @@
+@page
+@model webapp01.Pages.Courses.IndexModel
+@{
+    ViewData["Title"] = "Список курсов";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Добавить курс</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model.Courses)
+        {
+            <tr>
+                <td>@course.Name</td>
+                <td>@course.Description</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@course.Id" class="btn btn-primary btn-sm">Изменить</a>
+                    <a asp-page="./Details" asp-route-id="@course.Id" class="btn btn-info btn-sm">Детали</a>
+                    <a asp-page="./Delete" asp-route-id="@course.Id" class="btn btn-danger btn-sm">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> 

@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная страница";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Система управления курсами</h1>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Студенты</h5>
+                    <p class="card-text">Управление списком студентов</p>
+                    <a asp-page="/Students/Index" class="btn btn-primary">Перейти к студентам</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Курсы</h5>
+                    <p class="card-text">Управление учебными курсами</p>
+                    <a asp-page="/Courses/Index" class="btn btn-primary">Перейти к курсам</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Оценки</h5>
+                    <p class="card-text">Управление оценками студентов</p>
+                    <a asp-page="/Grades/Index" class="btn btn-primary">Перейти к оценкам</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

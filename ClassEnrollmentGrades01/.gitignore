@@ -1,0 +1,50 @@
+# Папки сборки
+bin/
+obj/
+
+# Файлы Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Файлы сборки
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Файлы логов
+*.log
+
+# Временные файлы Visual Studio
+*.tmp
+*.tmp_proj
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.meta
+
+# Файлы ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Файлы NuGet
+*.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Файлы системы Windows
+Thumbs.db
+Desktop.ini
+
+# Файлы macOS
+.DS_Store 

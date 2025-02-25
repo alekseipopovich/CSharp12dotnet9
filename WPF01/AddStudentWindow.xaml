@@ -1,0 +1,25 @@
+<Window x:Class="WPF01.AddStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавление студента" Height="200" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Имя:"/>
+        <TextBox x:Name="FirstNameTextBox" Grid.Row="1" Margin="0,5"/>
+        
+        <Label Content="Фамилия:" Grid.Row="2"/>
+        <TextBox x:Name="LastNameTextBox" Grid.Row="2" Margin="0,5"/>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="OK" Width="75" Click="OK_Click" Margin="0,0,10,0"/>
+            <Button Content="Отмена" Width="75" Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window> 
